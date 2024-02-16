@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
+#include "keymap_spanish.h"
 
 / {
     macros {
@@ -37,9 +38,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E      &kp R      &kp T             &kp Y        &kp U          &kp I      &kp O    &kp P     &kp BACKSLASH
-&kp TAB     &kp A  &kp S  &kp D      &kp F      &kp G             &kp H        &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z  &kp X  &kp C      &kp V      &kp B             &kp N        &kp M          &kp COMMA  &kp DOT  &kp FSLH  &lt 3 PRINTSCREEN
+&kp ESCAPE  &kp Q  &kp W  &kp E      &kp R      &kp T             &kp Y        &kp U          &kp I      &kp O    &kp P        &kp ES_BSLS
+&kp TAB     &kp A  &kp S  &kp D      &kp F      &kp G             &kp H        &kp J          &kp K      &kp L    &kp ES_SCLN  &kp ES_QUOT
+&kp LSHFT   &kp Z  &kp X  &kp C      &kp V      &kp B             &kp N        &kp M          &kp COMMA  &kp DOT  &kp ES_SLSH  &lt 3 PRINTSCREEN
                           &kp LCTRL  &kp SPACE  &lt 1 LEFT_GUI    &lt 2 ENTER  &kp BACKSPACE  &kp ENTER
             >;
         };
@@ -52,10 +53,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&euro      &kp DLLR   &kp PRCNT  &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp LESS_THAN      &kp GREATER_THAN  &kp MINUS         &kp UNDERSCORE     &kp HASH   &kp PIPE   &none
-&none      &kp ASTRK  &kp AT     &kp LPAR           &kp RPAR           &kp EXCLAMATION    &kp QUESTION      &kp EQUAL         &kp PLUS           &kp COLON  &kp SLASH  &trans
-&kp LSHFT  &trans     &trans     &kp LBRC           &kp RBRC           &trans             &kp AMPERSAND     &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &trans     &trans     &trans
-                                 &kp RIGHT_CONTROL  &kp LEFT_ALT       &none              &none             &kp DELETE        &none
+&kp ES_EURO  &kp ES_DLR    &kp ES_PERC  &kp ES_LCBR   &kp ES_RCBR    &kp ES_LABK           &kp ES_RABK   &kp ES_MINS   &kp ES_UNDS   &kp ES_HASH   &kp ES_PIPE   &kp ES_CIRC
+&kp ES_GRV   &kp ES_ASTR   &kp ES_AT    &kp ES_LPRN   &kp ES_RPRN    &kp ES_EXLM           &kp ES_QUES   &kp ES_EQL    &kp ES_PLUS   &kp ES_COLN   &kp ES_SLSH   &kp ES_CCED
+&kp LSHFT    &trans        &kp ES_NOT   &kp LBRC      &kp RBRC       &kp ES_IEXL           &kp ES_IQUE   &kp ES_QUOT   &kp ES_DQUO   &ES_CCED      &ES_NTIL      &ES_ACUT
+                                &kp RIGHT_CONTROL  &kp LEFT_ALT       &none              &none             &kp DELETE        &none
             >;
         };
 
@@ -69,17 +70,17 @@
             bindings = <
 &none  &none  &none           &kp UP_ARROW    &none      &none    &none  &none  &none  &none  &none  &none
 &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none           &none           &none      &none    &none  &none  &none  &none  &none  &kp RIGHT_SHIFT
+&kp CAPS_LOCK  &none  &none           &none           &none      &none    &none  &none  &none  &none  &none  &kp RIGHT_SHIFT
                               &kp LGUI        &none      &none    &none  &none  &none
             >;
         };
 
         NUMBERS {
             bindings = <
-&to 4  &kp N0       &kp N1  &kp N2       &kp N3  &kp FSLH     &kp F1  &kp F2   &kp F3           &kp F4   &none  &kp TILDE
-&none  &kp DOLLAR   &kp N4  &kp N5       &kp N6  &kp ASTRK    &kp F5  &kp F6   &kp F7           &kp F8   &none  &kp DQT
-&none  &kp PERCENT  &kp N7  &kp N8       &kp N9  &kp MINUS    &kp F9  &kp F10  &kp F11          &kp F12  &none  &kp RSHFT
-                            &kp KP_PLUS  &none   &kp BSPC     &none   &none    &kt PRINTSCREEN
+&to 4  &kp N0       &kp N1  &kp N2       &kp N3       &kp ES_SLSH       &kp F1  &kp F2   &kp F3    &kp F4   &none  &kp ES_TILD
+&none  &kp DOLLAR   &kp N4  &kp N5       &kp N6       &kp ES_ASTR       &kp F5  &kp F6   &kp F7    &kp F8   &none  &kp ES_DQUO
+&none  &kp PERCENT  &kp N7  &kp N8       &kp N9       &kp ES_MINS       &kp F9  &kp F10  &kp F11   &kp F12  &none  &kp RSHFT
+                            &kp KP_PLUS  &kp KC_PENT  &kp BSPC          &none   &none    &kt PRINTSCREEN
             >;
         };
 
