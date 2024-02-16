@@ -80,7 +80,7 @@
 &to 4  &kp N0       &kp N1  &kp N2       &kp N3       &kp ES_SLSH       &kp F1  &kp F2   &kp F3    &kp F4   &none  &kp ES_TILD
 &none  &kp DOLLAR   &kp N4  &kp N5       &kp N6       &kp ES_ASTR       &kp F5  &kp F6   &kp F7    &kp F8   &none  &kp ES_DQUO
 &none  &kp PERCENT  &kp N7  &kp N8       &kp N9       &kp ES_MINS       &kp F9  &kp F10  &kp F11   &kp F12  &none  &kp RSHFT
-                            &kp KP_PLUS  &kp KC_PENT  &kp BSPC          &none   &none    &kt PRINTSCREEN
+                            &kp KP_PLUS  &none  &kp BSPC          &none   &none    &kp PRINTSCREEN
             >;
         };
 
