@@ -55,7 +55,7 @@
             bindings = <
 &kp ES_EURO  &kp ES_DLR    &kp ES_PERC  &kp ES_LCBR   &kp ES_RCBR    &kp ES_LABK           &kp ES_RABK   &kp ES_MINS   &kp ES_UNDS   &kp ES_HASH   &kp ES_PIPE   &kp ES_CIRC
 &kp ES_GRV   &kp ES_ASTR   &kp ES_AT    &kp ES_LPRN   &kp ES_RPRN    &kp ES_EXLM           &kp ES_QUES   &kp ES_EQL    &kp ES_PLUS   &kp ES_COLN   &kp ES_SLSH   &kp ES_CCED
-&kp LSHFT    &trans        &kp ES_NOT   &kp LBRC      &kp RBRC       &kp ES_IEXL           &kp ES_IQUE   &kp ES_QUOT   &kp ES_DQUO   &ES_CCED      &ES_NTIL      &ES_ACUT
+&kp LSHFT    &trans        &kp ES_NOT   &kp LBRC      &kp RBRC       &kp ES_IEXL           &kp ES_IQUE   &kp ES_QUOT   &kp ES_DQUO   &kp ES_CCED   &kp ES_NTIL   &kp ES_ACUT
                                 &kp RIGHT_CONTROL  &kp LEFT_ALT       &none              &none             &kp DELETE        &none
             >;
         };
