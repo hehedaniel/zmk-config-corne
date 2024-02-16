@@ -38,7 +38,7 @@
 
             bindings = <
 &kp ESCAPE  &kp Q  &kp W  &kp E      &kp R      &kp T             &kp Y        &kp U          &kp I      &kp O    &kp P     &kp BACKSLASH
-&kp TAB     &kp B  &kp S  &kp D      &kp F      &kp G             &kp H        &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
+&kp TAB     &kp A  &kp S  &kp D      &kp F      &kp G             &kp H        &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT   &kp Z  &kp X  &kp C      &kp V      &kp B             &kp N        &kp M          &kp COMMA  &kp DOT  &kp FSLH  &lt 3 PRINTSCREEN
                           &kp LCTRL  &kp SPACE  &lt 1 LEFT_GUI    &lt 2 ENTER  &kp BACKSPACE  &kp ENTER
             >;
