@@ -11,21 +11,6 @@
 #include "keymap_spanish.h"
 
 / {
-    macros {
-        euro: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &kp RA(E) &kp LG(SPACE)>;
-            label = "NEW_MACRO";
-        };
-
-        tilde: tilde {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>;
-            label = "TILDE";
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
