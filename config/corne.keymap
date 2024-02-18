@@ -12,11 +12,11 @@
 
 
 // Layer aliases
-#define DEF 0
-#define LOW 1
-#define RAI 2
-#define NUM 3
-#define BLT 4
+#define QWERTY 0
+#define LOWER 1
+#define RAISE 2
+#define EXTRA 3
+#define BLUTU 4
 
 
 / {
@@ -26,7 +26,7 @@
 
         default_layer {
 
-            label = "DEF";
+            label = "QWERTY";
 
             // -----------------------------------------------------------------------------------------
             // | ESC |  Q  |  W  |  E  |  R  |  T  |          |  Y  |  U  |  I  |  O  |  P  |  \  |
@@ -44,25 +44,25 @@
 
         lower_layer {
 
-            label = "LOW";
+            label = "LOWER";
 
             // -----------------------------------------------------------------------------------------
-            // |  €  |  $  |  %  |  {  |  }  |  <  |          |  >  |  -  |  _  |  #  |  |  |
-            // |  `  |  *  |  @  |  (  |  )  |  !  |          |  ?  |  =  |  +  |  :  |  ;  |
-            // | LSF |  Ç  |  ¬  |  [  |  ]  |  ¡  |          |  ¿  |  '  |  "  |  ñ  |  ´  |
+            // |  €  |  $  |  %  |  {  |  }  |  <  |          |  >  |  -  |  _  |  #  |  |  |  ^  |
+            // |  `  |  *  |  @  |  (  |  )  |  !  |          |  ?  |  =  |  +  |  :  |  /  |  ç  |
+            // | LSF |  Ç  |  ¬  |  [  |  ]  |  ¡  |          |  ¿  |  '  |  "  |  ç  |  ñ  |  ´  |
             //                   | RCT | LAT |     |          |     | DEL |     |
 
             bindings = <
 &kp ES_EURO  &kp ES_DLR    &kp ES_PERC  &kp ES_LCBR   &kp ES_RCBR    &kp ES_LABK           &kp ES_RABK   &kp ES_MINS   &kp ES_UNDS   &kp ES_HASH   &kp ES_PIPE   &kp ES_CIRC
-&kp ES_GRV   &kp ES_ASTR   &kp ES_AT    &kp ES_LPRN   &kp ES_RPRN    &kp ES_EXLM           &kp ES_QUES   &kp ES_EQL    &kp ES_PLUS   &kp ES_COLN   &kp ES_SLSH   &kp ES_CCED
-&kp LSHFT    &kp ES_CCED   &kp ES_NOT   &kp ES_LBRC   &kp ES_RBRC       &kp ES_IEXL           &kp ES_IQUE   &kp ES_QUOT   &kp ES_DQUO   &kp ES_CCED   &kp ES_NTIL   &kp ES_ACUT
+&kp ES_GRV   &kp ES_ASTR   &kp ES_AT    &kp ES_LPRN   &kp ES_RPRN    &kp ES_EXLM           &kp ES_QUES   &kp ES_EQL    &kp ES_PLUS   &kp ES_COLN   &kp ES_SLSH   &kp ES_GRV
+&kp LSHFT    &kp ES_AMPR   &kp ES_NOT   &kp ES_LBRC   &kp ES_RBRC    &kp ES_IEXL           &kp ES_IQUE   &kp ES_QUOT   &kp ES_DQUO   &kp ES_CCED   &kp ES_NTIL   &kp ES_ACUT
                                 &kp RIGHT_CONTROL  &kp LEFT_ALT       &none              &none             &kp DELETE        &none
             >;
         };
 
         raise_layer {
 
-            label = "RAI";
+            label = "RAISE";
 
             // -----------------------------------------------------------------------------------------
             // |     |     |     | FAR |     |     |          |     |     |     |     |     |
@@ -78,9 +78,9 @@
             >;
         };
 
-        Numbers_layer {
+        Extra_layer {
 
-            label = "NUM";
+            label = "EXTRA";
 
             // -----------------------------------------------------------------------------------------
             // | TO4 |  0  |  1  |  2  |  3  |  /  |          | F_1 | F_2 | F_3 | F_4 |  ~  |
@@ -98,9 +98,9 @@
 
         Blutut_layer {
 
-            label = "BLT";
+            label = "BLUTU";
 
-        // -----------------------------------------------------------------------------------------
+            // -----------------------------------------------------------------------------------------
             // | TO0 |     |     |     |     |     |          |     |     |     |     |     |
             // |     | BS0 | BS1 | BS2 |     | BCL |          |     |     |     |     |     |
             // |     |     | BS3 | BS4 |     |     |          |     |     |     |     |     |
@@ -117,7 +117,7 @@
 };
 
 
-            //-------------------------------Keymap vacio-----------------------------------------------
+            //-------------------------------Keymap vacío-----------------------------------------------
             // -----------------------------------------------------------------------------------------
             // |     |     |     |     |     |     |          |     |     |     |     |     |
             // |     |     |     |     |     |     |          |     |     |     |     |     |
