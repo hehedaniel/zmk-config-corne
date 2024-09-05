@@ -120,15 +120,15 @@
             label = "GAMER";
 
             // -----------------------------------------------------------------------------------------
-            // | ENT |  Q  |  W  |  E  |  R  |  T  |          |  Y  |  U  |  I  |  O  |  P  |  \  |
-            // | TAB |  A  |  S  |  D  |  F  |  G  |          |  H  |  J  |  K  |  L  |  ;  |  '  |
-            // | SHF |  Z  |  X  |  C  |  V  |  B  |          |  N  |  M  |  ,  |  .  |  /  | 3PS |
+            // | ESC |  Q  |  W  |  E  |  R  |  T  |          | ESC | F1  | F3  | F4  | F5  |  \  |
+            // | TAB |  A  |  S  |  D  |  F  |  G  |          |  0  |  T  |  G  |  H  |  S  |  '  |
+            // | SHF |  Z  |  X  |  C  |  V  |  B  |          |  N  |  A  |  F  |  .  | SHF | 3PS |
             //                   | CTR | SPC |  M  |          | 2EN | BSP | ENT |
 
             bindings = <
-&kp ENTER  &kp Q  &kp W  &kp E      &kp R      &kp T             &kp ESCAPE        &kp U          &kp I      &kp O    &kp P        &kp ES_BSLS
-&kp TAB     &kp A  &kp S  &kp D      &kp F      &kp G             &to 0        &kp J          &kp K      &kp L    &kp ES_SCLN  &kp ES_QUOT
-&kp LSHFT   &kp Z  &kp X  &kp C      &kp V      &kp B             &kp N        &kp M          &kp COMMA  &kp DOT  &kp ES_SLSH  &lt 3 PRINTSCREEN
+&kp ESCAPE  &kp Q  &kp W  &kp E      &kp R      &kp T             &kp ESCAPE   &kp U          &kp F3     &kp F4   &kp F5     &kp ES_BSLS
+&kp TAB     &kp A  &kp S  &kp D      &kp F      &kp G             &to 0        &kp T          &kp G      &kp H    &kp S      &kp ES_QUOT
+&kp LSHFT   &kp Z  &kp X  &kp C      &kp V      &kp B             &kp N        &kp A          &kp F      &kp DOT  &kp LSHFT  &lt 3 PRINTSCREEN
                           &kp LCTRL  &kp SPACE  &kp M             &lt 2 ENTER  &kp BACKSPACE  &kp ENTER
             >;
         };
