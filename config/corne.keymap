@@ -57,7 +57,7 @@
 &kp ES_EURO  &kp ES_DLR    &kp ES_PERC  &kp ES_LCBR   &kp ES_RCBR    &kp ES_LABK           &kp ES_RABK   &kp ES_MINS   &kp ES_UNDS   &kp ES_HASH   &kp ES_PIPE   &kp ES_CIRC
 &kp ES_GRV   &kp ES_ASTR   &kp ES_AT    &kp ES_LPRN   &kp ES_RPRN    &kp ES_EXLM           &kp ES_QUES   &kp ES_EQL    &kp ES_PLUS   &kp ES_COLN   &kp ES_SLSH   &kp ES_GRV
 &kp LSHFT    &kp ES_AMPR   &kp ES_NOT   &kp ES_LBRC   &kp ES_RBRC    &kp ES_IEXL           &kp ES_IQUE   &kp ES_QUOT   &kp ES_DQUO   &kp ES_CCED   &kp ES_NTIL   &kp ES_ACUT
-                                &kp RIGHT_CONTROL  &kp LEFT_ALT       &none              &none             &kp DELETE        &none
+                                &kp RCTRL           &kp LEFT_ALT          &none              &none             &kp DELETE        &none
             >;
         };
 
@@ -74,7 +74,7 @@
             bindings = <
 &none  &none  &none           &kp UP_ARROW    &none      &none      &none  &kp LALT  &kp ENTER  &none  &none  &none
 &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none      &kp RGUI  &kp C_AC_FORWARD  &kp C_AC_BACK  &none  &none  &none
-&kp CAPSLOCK  &none           &none           &none      &none      &none  &none  &none  &none  &none  &none  &kp RIGHT_SHIFT
+&kp CAPSLOCK  &kp RCTRL       &none           &none      &none      &none  &none  &none  &none  &none  &none  &kp RIGHT_SHIFT
                               &kp LGUI        &none      &none      &none  &none  &none
             >;
         };
