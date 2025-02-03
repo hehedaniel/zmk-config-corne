@@ -139,8 +139,8 @@
     combos {
         compatible = "zmk,combos";
         combo_cleanterminal {
-            timeout-ms = <200>;
-            key-positions = <36 15>;
+            timeout-ms = <500>;
+            key-positions = <36 24>;
             bindings = <&kp LC(L)>;
         };
     };
