@@ -141,7 +141,7 @@
         combo_cleanterminal {
             timeout-ms = <200>;
             key-positions = <36 15>;
-            bindings = <&kp LCTRL &kp L>;
+            bindings = <&kp LC(L)>;
         };
     };
 };
