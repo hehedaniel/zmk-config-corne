@@ -140,8 +140,8 @@
         compatible = "zmk,combos";
         combo_cleanterminal {
             timeout-ms = <50>;
-            key-positions = <38 0>;
-            bindings = <&kp LCTRL, &kp L>;
+            key-positions = <36 0>;
+            bindings = <&kp LCTRL &kp L>;
         };
     };
 };
